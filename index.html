@@ -3,37 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Logotype - стратегия, UI/UX дизайн, разработка, seo для торговых марок премиум-класса</title>
-  <link rel="stylesheet" href="css/normalize.css" >
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <div class="logo">
-            <p>Logotype</p>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-8 col-sm-2">
+            <a class="phone" href="tel:+78006009090">8 (800) 600 90 90</a>
+          </div>
+          <div class="col-xs-4 col-sm-1">
+            <ul class="lang">Ваш язык:
+              <li class="lang__item">Русский <button class="lang__button lang__button--active" title="Сменить язык">Ru</button></li>
+              <li class="lang__item">English <button class="lang__button" title="Сменить язык">En</button></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <p class="logo">Logotype</p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <nav class="nav">
+              <ul class="menu">
+                <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link menu__link--active">Проекты</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link">Услуги</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-1">
-          <ul class="lang">Ваш язык:
-            <li><button class="lang__button lang__button--active">Русский</button></li>
-            <li><button class="lang__button">English</button></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <nav class="nav">
-            <ul class="menu">
-              <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-              <li class="menu__item"><a href="#" class="menu__link menu__link--active">Проекты</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-xs-12 col-sm-2">
-          <p class="phone">8 (800) 600 90 90</p>
-        </div>
       </div>
+    </div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="promo">
@@ -47,9 +50,9 @@
   </header>
   <main class="main">
     <div class="about" id="about">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <p class="title">Что мы делаем</p>
+          <p class="about__title">Что мы делаем</p>
           <div class="col-xs-12 col-sm-4">
             <div class="about__item analytics">
               <h3 class="title">Аналитика</h3>
@@ -58,7 +61,7 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about__item strategy">
-              <h3 class="title">Стретегия</h3>
+              <h3 class="title">Стратегия</h3>
               <p class="text">Мы объединяем стратегическое мышление с&nbsp;дизайном для&nbsp;создания эффективной коммуникации с&nbsp;вашим&nbsp;брендом в&nbsp;онлайн-среде. Разработаем коммуникационные, медиа- и&nbsp;digital-стратегии. Составим план развития на&nbsp;год&nbsp;вперед.</p>
             </div>
           </div>
@@ -86,16 +89,18 @@
     </div>
     <div class="projects" id="projects">
       <div class="projects__item projects__item--gazprom">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <h3 class="title">ПАО «Газпром»</h3>
               <ul class="list">
-                <li>Веб-сайт</li>
+                <li class="list__item">- Веб-сайт</li>
               </ul>
             </div>
             <div class="col-xs-12">
-              <img src="#" alt="ПАО Газпром">
+              <div class="wrapper">
+                <img src="img/projects__gazprom-l.png" alt="ПАО Газпром">
+              </div>
             </div>
             <div class="col-xs-12">
               <a href="#" class="projects__button">Смотреть проект</a>
@@ -104,19 +109,21 @@
         </div>
       </div>
       <div class="projects__item projects__item--tinkoff">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <h3 class="title">Тинькофф Банк</h3>
               <ul class="list">
-                <li>Брендинг</li>
-                <li>UI/UX дизайн</li>
-                <li>Разработка мобильного приложения для iOS</li>
-                <li>Веб-сайт</li>
+                <li class="list__item">- Брендинг</li>
+                <li class="list__item">- UI/UX дизайн</li>
+                <li class="list__item">- Разработка мобильного приложения для iOS</li>
+                <li class="list__item">- Веб-сайт</li>
               </ul>
             </div>
             <div class="col-xs-12">
-              <img src="#" alt="Тинькофф Банк">
+              <div class="wrapper">
+                <img src="img/projects__tinkoff-l.png" alt="Тинькофф Банк">
+              </div>
             </div>
             <div class="col-xs-12">
               <a href="#" class="projects__button">Смотреть проект</a>
@@ -125,17 +132,19 @@
         </div>
       </div>
       <div class="projects__item projects__item--adidas">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <h3 class="title">Adidas</h3>
               <ul class="list">
-                <li>Веб-сайт</li>
-                <li>Разработка мобильного приложения для iOS, Android и Windows</li>
+                <li class="list__item">- Веб-сайт</li>
+                <li class="list__item">- Разработка мобильного приложения для iOS, Android и Windows</li>
               </ul>
             </div>
             <div class="col-xs-12">
-              <img src="#" alt="ПАО Газпром">
+              <div class="wrapper">
+                <img src="img/projects__adidas-l.png" alt="ПАО Газпром">
+              </div>
             </div>
             <div class="col-xs-12">
               <a href="#" class="projects__button">Смотреть проект</a>
@@ -144,13 +153,17 @@
         </div>
       </div>
       <div class="projects__item projects__item--all">
-        <a href="#" class="projects__button">Все наши проекты</a>
+        <div class="container-fluid">
+          <div class="row">
+            <a href="#" class="projects__button">Все наши проекты</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="benefits">
-      <h2 class="title"><span>6</span> причин работать с нами</h2>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
+          <h2 class="benefits__title"><span>6</span> причин работать с нами</h2>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="benefits__item">
               <h3 class="title">Профессионализм</h3>
@@ -191,30 +204,31 @@
       </div>
     </div>
     <div class="clients">
-      <h2 class="title">Наши клиенты</h2>
-        <div class="container">
-          <div class="row">
-            <ul class="clients__list">
-              <li class="clients__item col-xs-12 col-sm-3">Тинькофф Банк</li>
-              <li class="clients__item col-xs-12 col-sm-3">Газпром</li>
-              <li class="clients__item col-xs-12 col-sm-3">Manchester United</li>
-              <li class="clients__item col-xs-12 col-sm-3">Эрмитаж</li>
-              <li class="clients__item col-xs-12 col-sm-3">Moleskine</li>
-              <li class="clients__item col-xs-12 col-sm-3">Starbucks</li>
-              <li class="clients__item col-xs-12 col-sm-3">Audi</li>
-              <li class="clients__item col-xs-12 col-sm-3">Adidas</li>
-              <li class="clients__item col-xs-12 col-sm-3">Ginza</li>
-              <li class="clients__item col-xs-12 col-sm-3">Oscars</li>
-              <li class="clients__item col-xs-12 col-sm-3">Альфабанк</li>
-              <li class="clients__item col-xs-12 col-sm-3">Showtime</li>
-            </ul>
-          </div>
-          <p class="speech">Нам часто говорят: «Это лучше, чем я мог представить». Мы отвечаем, что это просто хорошая работа.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <h2 class="title">Наши клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__item col-xs-6 col-sm-3">Тинькофф Банк<img src="img/clients__tinkoff.png" width="90px" alt="Тинькофф Банк"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Газпром<img src="img/clients__gazprom.png" width="90px" alt="Газпром"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Manchester United<img src="img/clients__mu.png" width="90px" alt="Manchester United"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Эрмитаж<img src="img/clients__hermitage.png" width="90px" alt="Эрмитаж"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Moleskine<img src="img/clients__moleskine.png" width="90px" alt="Moleskine"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Starbucks<img src="img/clients__starbucks.png" width="90px" alt="Starbucks"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Audi<img src="img/clients__audi.png" width="90px" alt="Audi"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Adidas<img src="img/clients__adidas.png" width="90px" alt="Adidas"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Ginza<img src="img/clients__ginza.png" width="90px" alt="Ginza"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Oscars<img src="img/clients__oscar.png" width="90px" alt="Oscars"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Альфабанк<img src="img/clients__alfa.png" width="90px" alt="Альфабанк"></li>
+            <li class="clients__item col-xs-6 col-sm-3">Showtime<img src="img/clients__showtime.png" width="90px" alt="Showtime"></li>
+          </ul>
         </div>
+        <p class="speech">Нам часто говорят: «Это лучше, чем я мог представить». Мы отвечаем, что это просто хорошая работа.</p>
+      </div>
+      <div class="container-fluid">
         <div class="row">
           <div class="review">
             <div class="col-xs-12 col-sm-6 col-md-8">
-              <p>Отзыв клиента</p>
+              <div class="video"></div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <p class="review__description"><span>Говард Шульц</span><br>председатель совета директоров, главный управляющий и президент компании Starbucks</p>
@@ -222,18 +236,27 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
   </main>
   <footer class="footer">
-    <p class="title">Вы уже хотите пообщаться с нами?</p>
-    <div class="contacts">
-      <p class="mail">hello@iwant.com</p>
-      <p class="phone">8 (800) 600 90 90</p>
-      <div class="social">
-        <a class="social__link" href="#">behance</a>
-        <a class="social__link" href="#">dribble</a>
-        <a class="social__link" href="#">vkontakte</a>
-        <a class="social__link" href="#">facebook</a>
+    <div class="contacts" id="contacts">
+      <div class="container-fluid">
+        <div class="row">
+          <p class="title">Вы уже хотите пообщаться с нами?</p>
+          <p class="mail">hello@iwant.com</p>
+          <p class="phone">8 (800) 600 90 90</p>
+        </div>
+      </div>
+    </div>
+    <div class="social">
+      <div class="container-fluid">
+        <div class="row">
+          <a class="social__link" href="#">behance</a>
+          <a class="social__link" href="#">dribble</a>
+          <a class="social__link" href="#">vkontakte</a>
+          <a class="social__link" href="#">facebook</a>
+        </div>
       </div>
     </div>
   </footer>
