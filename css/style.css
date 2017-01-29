@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic,latin-ext'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic,latin-ext');
 
 @font-face {
     font-family: 'Gilroy';
@@ -205,7 +205,7 @@ img {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.46);
+    background-color: #bdcbd7;
   }
 
 /* projects */
@@ -485,8 +485,8 @@ img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25abff', endColorstr='#57d782', GradientType=0 );
   }
 
-  .social__link:hover:before {
-    content: '1';
+  .social__link:before {
+    content: '';
     display: block;
     position: absolute;
     height: 34px;
@@ -499,6 +499,10 @@ img {
     transform: translate(-50%, -50%);
     background-color: #222222;
     border-radius: 50%;
+  }
+
+  .social__link:hover:before {
+    background-color: transparent;
   }
 
   .social .row {
@@ -524,7 +528,7 @@ img {
   .review__button:before {
     width: 30px;
     height: 8px;
-    background-position: -131px -73px;
+    background-position: -77px -73px;
     right: 0.5em;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -538,7 +542,7 @@ img {
   .review__button:hover:before {
     width: 30px;
     height: 8px;
-    background-position: -131px -128px;
+    background-position: -154px -73px;
     right: 0.5em;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -548,9 +552,9 @@ img {
   }
 
   .review .video:before {
-    width: 49px;
-    height: 57px;
-    background-position: -212px -162px;
+    width: 161px;
+    height: 161px;
+    background-position: -289px -5px;
     left: 52%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -571,25 +575,25 @@ img {
   .social__link--be:after {
     width: 21px;
     height: 14px;
-    background-position: -238px -77px;
+    background-position: -77px -176px;
   }
 
   .social__link--dribble:after {
     width: 28px;
     height: 28px;
-    background-position: -273px -61px;
+    background-position: -255px -176px;
   }
 
   .social__link--vk:after {
     width: 24px;
     height: 13px;
-    background-position: -131px -99px;
+    background-position: -393px -176px;
   }
 
   .social__link--fb:after {
     width: 11px;
     height: 22px;
-    background-position: -298px -99px;
+    background-position: -322px -176px;
   }
 }
 
@@ -641,7 +645,7 @@ img {
   }
 
   .lang__button,
-  .phone,
+  .header .phone,
   .logo {
     line-height: 2.6rem;
     vertical-align: middle;
@@ -689,7 +693,7 @@ img {
   .about__item--strategy .title:before {
     width: 44px;
     height: 58px;
-    background-position: -5px -73px;
+    background-position: -201px -5px;
   }
 
   .about__item--smm .title:before {
@@ -701,7 +705,7 @@ img {
   .about__item--technologies .title:before {
     width: 62px;
     height: 51px;
-    background-position: -59px -73px;
+    background-position: -5px -73px;
   }
 
   .about__item--design .title:before {
@@ -762,20 +766,15 @@ img {
     font-size: 3.4rem;
   }
 
-  .video:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 120px;
-    width: 120px;
-    background-color: transparent;
-    border: 3px solid rgba(255, 255, 255, 0.46);
-    border-radius: 50%;
+/* review */
+  .review {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
   }
 
   .review__button {
@@ -793,20 +792,148 @@ img {
   .review__button:before {
     width: 27px;
     height: 113px;
-    background-position: -201px -5px;
+    background-position: -117px -73px;
     right: 0;
   }
 
   .review__button:hover:before {
     width: 27px;
     height: 113px;
-    background-position: -201px -5px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-position: -117px -73px;
+  }
+
+/* footer */
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .social__link {
+    height: 74px;
+    width: 74px;
+  }
+
+  .social__link:before {
+    height: 70px;
+    width: 70px;
+  }
+
+  .social__link:hover:before {
+    background-color: transparent;
+  }
+
+  .social__link--be:after {
+    width: 35px;
+    height: 23px;
+    background-position: -154px -176px;
+  }
+
+  .social__link--dribble:after {
+    width: 46px;
+    height: 46px;
+    background-position: -199px -176px;
+  }
+
+  .social__link--vk:after {
+    width: 40px;
+    height: 22px;
+    background-position: -343px -176px;
+  }
+
+  .social__link--fb:after {
+    width: 19px;
+    height: 38px;
+    background-position: -293px -176px;
+  }
+}
+
+/* min-width 992px */
+@media (min-width: 992px) {
+/* header */
+  .header .phone,
+  .lang__button,
+  .menu__link {
+    font-size: 2.2rem;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  .menu__link:hover {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  .promo__title {
+    font-size: 6rem;
+  }
+
+  .promo__text {
+    font-size: 3rem;
+  }
+
+  .promo__button,
+  .about__button {
+    font-size: 2.2rem;
+  }
+
+/* about */
+  .about__title {
+    font-size: 4.8rem;
+  }
+
+  .about .title {
+    font-size: 1.9rem;
+  }
+
+  .about .text {
+    font-size: 1.7rem;
+  }
+/* projects */
+  .projects__item .title {
+    font-size: 4.8rem;
+  }
+
+  .projects__item .list__item {
+    font-size: 2.4rem;
+  }
+
+  .projects__button {
+    font-size: 2.2rem;
+  }
+
+  .projects__item--all {
+    height: 212px;
+  }
+
+/* benefits */
+  .benefits__title {
+    font-size: 4.8rem;
+  }
+
+  .benefits .title {
+    font-size: 1.9rem;
+  }
+
+  .benefits .text {
+    font-size: 1.7rem;
+  }
+
+/* clients */
+  .clients .title {
+    font-size: 4.8rem;
+  }
+
+  .speech:before,
+  .speech:after {
+    width: 45px;
+    height: 4px;
   }
 
   .review__description {
-    padding-right: 30px;
+    font-size: 1.7rem;
   }
 
-
+  .review__description span {
+    font-size: 1.9rem;
+  }
 }
