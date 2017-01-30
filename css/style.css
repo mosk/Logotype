@@ -280,6 +280,10 @@ img {
     background-color: #ffffff;
   }
 
+  .projects__item--all {
+    text-align: center;
+  }
+
   .projects__item--all .projects__button {
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -294,6 +298,7 @@ img {
 /* benefits */
   .benefits {
     background-color: #f1f2f2;
+    position: relative;
   }
 
   .benefits__title {
@@ -555,7 +560,7 @@ img {
     width: 161px;
     height: 161px;
     background-position: -289px -5px;
-    left: 52%;
+    left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -897,6 +902,19 @@ img {
     font-size: 2.4rem;
   }
 
+  .projects__item--gazprom .wrapper {
+    top: -220px;
+  }
+
+  .projects__item--tinkoff .wrapper {
+    top: -300px;
+    left: -60vh;
+  }
+
+  .projects__item--adidas .wrapper {
+    top: -230px;
+  }
+
   .projects__button {
     font-size: 2.2rem;
   }
@@ -929,11 +947,98 @@ img {
     height: 4px;
   }
 
+  .review .video:after {
+    content: 'Отзыв клиента';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-family: 'Roboto Light', 'Arial', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   .review__description {
     font-size: 1.7rem;
   }
 
   .review__description span {
     font-size: 1.9rem;
+  }
+}
+
+/* min-width 1200px */
+@media (min-width: 1200px) {
+/* header */
+  .header .phone,
+  .lang__button,
+  .menu__link {
+    font-size: 1.8rem;
+  }
+
+  .lang__item {
+    margin-left: 0;
+  }
+
+  .header:first-child .row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+/* projects */
+  .projects__item--gazprom,
+  .projects__item--tinkoff,
+  .projects__item--adidas {
+    min-height: 600px;
+  }
+
+/* clients */
+  .clients__item {
+    width: 24%;
+  }
+}
+
+/* min-width 1500px */
+@media (min-width: 1500px) {
+/* header */
+  .header {
+    padding-top: 30px;
+  }
+
+  .header .phone,
+  .lang__button,
+  .menu__link {
+    font-size: 2.2rem;
+    border: 2px solid transparent;
+  }
+
+  .lang__button--active,
+  .lang__button:hover,
+  .menu__link:hover {
+    border: 2px solid  #fff;
+  }
+
+  .promo__title {
+    font-size: 9rem;
+  }
+
+  .promo__text {
+    font-size: 3.4rem;
+  }
+
+/* projects */
+  .projects__item--gazprom,
+  .projects__item--tinkoff,
+  .projects__item--adidas {
+    min-height: 700px;
   }
 }
