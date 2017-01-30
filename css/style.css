@@ -1035,10 +1035,65 @@ img {
     font-size: 3.4rem;
   }
 
+  .logo:before,
+  .logo:after,
+  .header .phone:before,
+  .header .phone:after,
+  .lang:before {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: '';
+  }
+
+  .logo:before {
+    width: 31px;
+    height: 31px;
+    background-position: -194px -73px;
+    left: 85vw;
+    top: 75vh;
+  }
+
+  .logo:after {
+    width: 19px;
+    height: 28px;
+    background-position: -255px -5px;
+    left: 95vw;
+    top: 20vh;
+  }
+
+  .header .phone:before {
+    width: 24px;
+    height: 25px;
+    background-position: -255px -43px;
+    left: -60vw;
+    top: 77vh;
+  }
+
+  .header .phone:after {
+    width: 25px;
+    height: 27px;
+    background-position: -235px -78px;
+    left: -70vw;
+    top: 5vh;
+  }
+
+  .lang:before {
+    width: 27px;
+    height: 24px;
+    background-position: -77px -115px;
+    left: -25vw;
+    top: 50vh;
+  }
+
 /* projects */
   .projects__item--gazprom,
   .projects__item--tinkoff,
   .projects__item--adidas {
     min-height: 700px;
   }
+
+/* benefits */
+
 }
