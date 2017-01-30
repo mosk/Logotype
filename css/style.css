@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic,latin-ext');
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-400-normal.woff2') format('woff2'), url('../fonts/roboto-400-normal.woff') format('woff'), url('../fonts/roboto-400-normal.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/gilroy-800-normal.woff2') format('woff2'), url('../fonts/gilroy-800-normal.woff') format('woff'), url('../fonts/gilroy-800-normal.ttf') format('truetype');
+  font-family: 'Roboto Light';
+  src: url('../fonts/roboto-300-normal.woff2') format('woff2'), url('../fonts/roboto-300-normal.woff') format('woff'), url('../fonts/roboto-300-normal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/roboto-700-normal.woff2') format('woff2'), url('../fonts/roboto-700-normal.woff') format('woff'), url('../fonts/roboto-700-normal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy-800-normal.woff2') format('woff2'), url('../fonts/gilroy-800-normal.woff') format('woff'), url('../fonts/gilroy-800-normal.ttf') format('truetype');
 }
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 10px;
+  color: #000000;
 }
 
 img {
@@ -23,7 +37,7 @@ img {
     height: 100vh;
     min-height: 480px;
     padding-top: 15px;
-    background: rgba(0, 0, 0, 0.65) url(../img/header__bg-l.jpg) center;
+    background: rgba(0, 0, 0, 0.65) url(../img/header__bg-l.jpg) 50% 50%;
     background-blend-mode: overlay;
     -webkit-background-size: cover;
     background-size: cover;
@@ -448,7 +462,7 @@ img {
 
 /* footer */
   .footer .contacts {
-    background: rgba(0, 0, 0, 0.6) url(../img/contacts__bg.jpg) center;
+    background: rgba(0, 0, 0, 0.6) url(../img/contacts__bg-l.jpg) 50% 50%;
     background-blend-mode: overlay;
     -webkit-background-size: cover;
     background-size: cover;
@@ -682,6 +696,7 @@ img {
 /* about */
   .about__item{
     margin-top: 120px;
+    position: relative;
   }
 
   .about__item .title:before {
@@ -907,8 +922,8 @@ img {
   }
 
   .projects__item--tinkoff .wrapper {
-    top: -300px;
-    left: -60vh;
+    top: -350px;
+    left: -80vh;
   }
 
   .projects__item--adidas .wrapper {
@@ -974,6 +989,12 @@ img {
 /* min-width 1200px */
 @media (min-width: 1200px) {
 /* header */
+  .header {
+    background: rgba(0, 0, 0, 0.65) url(../img/header__bg-l.jpg) 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
   .header .phone,
   .lang__button,
   .menu__link {
@@ -1005,7 +1026,19 @@ img {
   .clients__item {
     width: 24%;
   }
-}
+
+  .review .video {
+    background: rgba(0, 0, 0, 0.4) url(../img/clients__video-h.jpg) center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+/* footer */
+  .footer .contacts {
+    background: rgba(0, 0, 0, 0.6) url(../img/contacts__bg-h.jpg) 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
 
 /* min-width 1500px */
 @media (min-width: 1500px) {
@@ -1087,6 +1120,58 @@ img {
     top: 50vh;
   }
 
+/* about */
+  .about__item--analytics:after,
+  .about__item--strategy:after,
+  .about__item--smm:after,
+  .about__item--technologies:after,
+  .about__item--design:after {
+    background-image: url(../img/spritesheet.png);
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  .about__item--analytics:after {
+    width: 31px;
+    height: 31px;
+    background-position: -154px -115px;
+    left: -10px;
+    top: -25vh;
+  }
+
+  .about__item--strategy:after {
+    width: 19px;
+    height: 28px;
+    background-position: -195px -115px;
+    left: -450px;
+    top: 420px;
+  }
+
+  .about__item--smm:after {
+    width: 24px;
+    height: 25px;
+    background-position: -224px -115px;
+    left: 300px;
+    top: 450px;
+  }
+
+  .about__item--technologies:after {
+    width: 25px;
+    height: 27px;
+    background-position: -5px -150px;
+    left: -240px;
+    top: -150px;
+  }
+
+  .about__item--design:after {
+    width: 27px;
+    height: 24px;
+    background-position: -40px -150px;
+    left: 300px;
+    top: -70vh;
+  }
+
 /* projects */
   .projects__item--gazprom,
   .projects__item--tinkoff,
@@ -1094,6 +1179,219 @@ img {
     min-height: 700px;
   }
 
-/* benefits */
+  .projects__item--gazprom img {
+    max-height: 750px;
+  }
 
+  .projects__item--tinkoff img {
+    max-height: 1100px;
+  }
+
+  .projects__item--adidas img {
+    max-height: 1100px;
+  }
+
+/* benefits */
+  .benefits .title {
+    padding-left: 45px;
+  }
+
+  .benefits .title:before {
+    height: 4px;
+    width: 45px;
+    left: -10px;
+  }
+
+  .benefits__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+/* clients */
+  .clients__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .clients__item img[src*="tinkoff"] {
+    width: 241px;
+  }
+
+  .clients__item img[src*="gazprom"] {
+    width: 252px;
+  }
+
+  .clients__item img[src*="mu"] {
+    width: 182px;
+  }
+
+  .clients__item img[src*="hermitage"] {
+    width: 241px;
+  }
+
+  .clients__item img[src*="moleskin"] {
+    width: 248px;
+  }
+
+  .clients__item img[src*="starbucks"] {
+    width: 167px;
+  }
+
+  .clients__item img[src*="audi"] {
+    width: 220px;
+  }
+
+  .clients__item img[src*="adidas"] {
+    width: 200px;
+  }
+
+  .clients__item img[src*="ginza"] {
+    width: 173px;
+  }
+
+  .clients__item img[src*="oscar"] {
+    width: 298px;
+  }
+
+  .clients__item img[src*="alfa"] {
+    width: 215px;
+  }
+
+  .clients__item img[src*="showtime"] {
+    width: 250px;
+  }
+
+  .clients {
+    padding-bottom: 210px;
+  }
+
+  .clients__list {
+    padding-bottom: 180px;
+  }
+
+  .clients .review {
+    padding-top: 180px;
+  }
+
+  .clients .speech {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .clients .speech:before {
+    top: 0px;
+  }
+
+  .clients .speech:after {
+    bottom: 0px;
+  }
+
+  .review__description:before,
+  .review__description:after,
+  .review__description span:before,
+  .review__description span:after,
+  .review__button:after {
+    background-image: url(../img/spritesheet.png);
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  .review__description:before {
+    width: 31px;
+    height: 31px;
+    background-position: -154px -115px;
+    left: -1000px;
+    top: -42vh;
+  }
+
+  .review__description:after {
+    width: 19px;
+    height: 28px;
+    background-position: -195px -115px;
+    left: 60px;
+    top: -320px;
+  }
+
+  .review__description span:before {
+    width: 24px;
+    height: 25px;
+    background-position: -224px -115px;
+    left: -900px;
+    top: 520px;
+  }
+
+  .review__description span:after {
+    width: 25px;
+    height: 27px;
+    background-position: -5px -150px;
+    left: 200px;
+    top: 300px;
+  }
+
+  .review__button:after {
+    width: 27px;
+    height: 24px;
+    background-position: -40px -150px;
+    right: 20px;
+    top: -250px;
+  }
+
+/* footer */
+  .footer .title,
+  .footer .mail,
+  .footer .phone {
+    position: relative;
+  }
+
+  .footer .title:before,
+  .footer .title:after,
+  .footer .mail:before,
+  .footer .mail:after,
+  .footer .phone:before {
+    background-image: url(../img/spritesheet.png);
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  .footer .title:before {
+    width: 31px;
+    height: 31px;
+    background-position: -194px -73px;
+    left: 200px;
+    top: 240px;
+  }
+
+  .footer .title:after {
+    width: 19px;
+    height: 28px;
+    background-position: -255px -5px;
+    right: 80px;
+    top: -80px;
+  }
+
+    .footer .mail:before {
+    width: 24px;
+    height: 25px;
+    background-position: -255px -43px;
+    left: 0px;
+    top: -80px;
+  }
+
+    .footer .mail:after {
+    width: 25px;
+    height: 27px;
+    background-position: -235px -78px;
+    right: 450px;
+    top: 0px;
+  }
+
+    .footer .phone:before {
+    width: 27px;
+    height: 24px;
+    background-position: -77px -115px;
+    right: 20px;
+    top: 50px;
+  }
 }
