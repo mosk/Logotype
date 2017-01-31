@@ -1039,6 +1039,7 @@ img {
     -webkit-background-size: cover;
     background-size: cover;
   }
+}
 
 /* min-width 1500px */
 @media (min-width: 1500px) {
@@ -1192,6 +1193,28 @@ img {
   }
 
 /* benefits */
+  .benefits__title {
+    display: inline;
+    line-height: 70px;
+    position: relative;
+    left: -100px;
+    z-index: 1000;
+  }
+
+  .benefits .row:nth-of-type(1) {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .benefits__title span{
+    position: relative;
+    font-size: 9em;
+    z-index: 0;
+    top: 88px;
+    left: 158px;
+    z-index: 100;
+  }
+
   .benefits .title {
     padding-left: 45px;
   }
@@ -1203,8 +1226,8 @@ img {
   }
 
   .benefits__item {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
 /* clients */
