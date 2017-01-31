@@ -72,6 +72,10 @@ img {
     display: inline-block;
   }
 
+  button:focus {
+    outline: none;
+  }
+
   .lang__button {
     padding: 0;
     font-family: 'Roboto Light', 'Arial', sans-serif;
@@ -225,6 +229,8 @@ img {
 /* projects */
   .projects {
     background-color: #303030;
+    position: relative;
+    z-index: 1000;
   }
 
   .projects__item {
@@ -321,7 +327,7 @@ img {
     text-align: center;
   }
 
-  .benefits__title span {
+  .benefits__title--number {
     color: #e74c3c;
   }
 
@@ -428,6 +434,7 @@ img {
     height: 0;
     padding-top: 56%;
     position: relative;
+    z-index: 1000;
   }
 
   .review .video:hover {
@@ -1198,20 +1205,25 @@ img {
     line-height: 70px;
     position: relative;
     left: -100px;
-    z-index: 1000;
   }
 
   .benefits .row:nth-of-type(1) {
     text-align: center;
     margin-bottom: 80px;
+    opacity: 0.99;
   }
 
-  .benefits__title span{
+  .benefits__title--number {
     position: relative;
-    font-size: 9em;
+    font-size: 9.5em;
     z-index: 0;
-    top: 88px;
-    left: 158px;
+    top: 92px;
+    left: 149px;
+  }
+
+  .benefits__title--text {
+    position: relative;
+    color: #000000;
     z-index: 100;
   }
 
