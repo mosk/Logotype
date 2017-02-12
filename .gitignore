@@ -24,6 +24,9 @@ $RECYCLE.BIN/
 # TXT
 *.txt
 
+#Prepros config
+prepros-6.config
+
 # Sublime-project, sublime-workspace
 *.sublime-*
 
